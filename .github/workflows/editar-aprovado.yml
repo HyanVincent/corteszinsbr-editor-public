@@ -51,6 +51,10 @@ jobs:
       - name: Render original clip with webcam detection and burned-in subtitles
         run: |
           python src/pipeline.py --video-url "$VIDEO_URL" --start 0 --window-sec 180 --max-clips 1 --subtitle-mode auto
+      - name: Suggest title and caption for manual review
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python src/suggest_copy.py --output output --provider auto
       - name: Validate output (no publishing)
         run: python src/quality_gate.py --output output --destination qa
       - name: Upload review artifacts - publicly accessible
