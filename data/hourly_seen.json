@@ -1,7 +1,77 @@
 {
-  "seen_ids": [],
-  "dispatched_ids": [],
-  "daily_dispatch": {},
-  "last_batch": [],
-  "last_batch_at": 0
+  "seen_ids": [
+    "clip_01M8549EKAG33D916X1PRHFRFF",
+    "clip_01M854GJTJ2SP7X2DQC3A6PD8M",
+    "clip_01M858VCPT1Q568RYBTD3NPBW4",
+    "clip_01M85D4FWNP32V2W4PNJA5CG38",
+    "clip_01M85FXFXPF6DZ7S2AMNJDQM0J"
+  ],
+  "dispatched_ids": [
+    "clip_01M8549EKAG33D916X1PRHFRFF",
+    "clip_01M854GJTJ2SP7X2DQC3A6PD8M",
+    "clip_01M858VCPT1Q568RYBTD3NPBW4",
+    "clip_01M85D4FWNP32V2W4PNJA5CG38",
+    "clip_01M85FXFXPF6DZ7S2AMNJDQM0J"
+  ],
+  "daily_dispatch": {
+    "2026-11-23": 5
+  },
+  "last_batch": [
+    {
+      "id": "clip_01M8549EKAG33D916X1PRHFRFF",
+      "channel": "allanstag",
+      "url": "https://kick.com/allanstag/clips/clip_01M8549EKAG33D916X1PRHFRFF",
+      "views": 20,
+      "timestamp": 1795468631,
+      "duration_seconds": 32.0,
+      "rule": "highest_views_created_last_hour",
+      "needs_content_review": true,
+      "auto_published": false
+    },
+    {
+      "id": "clip_01M854GJTJ2SP7X2DQC3A6PD8M",
+      "channel": "gabepeixe",
+      "url": "https://kick.com/gabepeixe/clips/clip_01M854GJTJ2SP7X2DQC3A6PD8M",
+      "views": 6,
+      "timestamp": 1795468850,
+      "duration_seconds": 40.0,
+      "rule": "highest_views_created_last_hour",
+      "needs_content_review": true,
+      "auto_published": false
+    },
+    {
+      "id": "clip_01M858VCPT1Q568RYBTD3NPBW4",
+      "channel": "davyjones",
+      "url": "https://kick.com/davyjones/clips/clip_01M858VCPT1Q568RYBTD3NPBW4",
+      "views": 6,
+      "timestamp": 1795473460,
+      "duration_seconds": 21.0,
+      "rule": "highest_views_created_last_hour",
+      "needs_content_review": true,
+      "auto_published": false
+    },
+    {
+      "id": "clip_01M85D4FWNP32V2W4PNJA5CG38",
+      "channel": "brabox",
+      "url": "https://kick.com/brabox/clips/clip_01M85D4FWNP32V2W4PNJA5CG38",
+      "views": 6,
+      "timestamp": 1795477943,
+      "duration_seconds": 152.0,
+      "rule": "highest_views_created_last_hour",
+      "needs_content_review": true,
+      "auto_published": false
+    },
+    {
+      "id": "clip_01M85FXFXPF6DZ7S2AMNJDQM0J",
+      "channel": "coringa",
+      "url": "https://kick.com/coringa/clips/clip_01M85FXFXPF6DZ7S2AMNJDQM0J",
+      "views": 9,
+      "timestamp": 1795480920,
+      "duration_seconds": 24.0,
+      "rule": "highest_views_created_last_hour",
+      "needs_content_review": true,
+      "auto_published": false
+    }
+  ],
+  "last_batch_at": 1795482814
 }
