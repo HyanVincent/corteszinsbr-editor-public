@@ -1,7 +1,7 @@
 name: Corteszinsbr - descobrir e editar (publico)
 on:
   schedule:
-    - cron: '13 */4 * * *'
+    - cron: '17 */4 * * *'
   workflow_dispatch:
   push:
     branches: [main]
