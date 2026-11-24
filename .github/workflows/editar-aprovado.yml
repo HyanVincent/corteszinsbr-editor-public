@@ -1,0 +1,67 @@
+name: Corteszinsbr - editar clipe aprovado (publico)
+on:
+  workflow_dispatch:
+    inputs:
+      video_url:
+        description: 'URL publica de um clipe dos cinco criadores Kick autorizados'
+        required: true
+        type: string
+  push:
+    branches: [main]
+    paths:
+      - 'requests/allan-rerender.json'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-editor-${{ github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  edit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install FFmpeg, fonts and Python tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt 'yt-dlp>=2026.10.26' pytest
+      - name: Run regression tests
+        run: python -m pytest -q tests/
+      - name: Resolve requested public clip
+        env:
+          MANUAL_URL: ${{ inputs.video_url }}
+        run: |
+          python - <<'PY'
+          import json, os, pathlib
+          url = os.environ.get('MANUAL_URL', '').strip()
+          if not url:
+              url = json.loads(pathlib.Path('requests/allan-rerender.json').read_text())['url']
+          with open(os.environ['GITHUB_ENV'], 'a') as f:
+              f.write('VIDEO_URL=' + url + '\n')
+          print('Public clip validated for editor input')
+          PY
+      - name: Render original clip with webcam detection and burned-in subtitles
+        run: |
+          python src/pipeline.py --video-url "$VIDEO_URL" --start 0 --window-sec 180 --max-clips 1 --subtitle-mode auto
+      - name: Validate output (no publishing)
+        run: python src/quality_gate.py --output output --destination qa
+      - name: Upload review artifacts - publicly accessible
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: corteszinsbr-public-review-${{ github.run_number }}
+          path: |
+            qa/prontos/
+            qa/revisar/
+            qa/gabepeixe_editorial/
+            output/cortes.json
+          retention-days: 7
+          if-no-files-found: warn
