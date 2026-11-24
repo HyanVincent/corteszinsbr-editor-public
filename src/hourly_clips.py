@@ -25,7 +25,7 @@ HISTORY = ROOT / "data" / "discovery_seen.json"
 TIMEZONE = ZoneInfo("America/Sao_Paulo")
 LOOKBACK_SECONDS = 3600
 LIST_LIMIT = 100
-DEFAULT_DAILY_CAP = 30
+DEFAULT_DAILY_CAP = 12
 GTA_CATEGORY = re.compile(r"^(?:grand theft auto\b|gta(?=\b|[456]))", re.IGNORECASE)
 
 
@@ -166,7 +166,7 @@ def dispatch(state_path: Path, daily_cap: int = DEFAULT_DAILY_CAP, now_ts: int |
             skipped.append({"url": clip["url"], "reason": "daily_cost_guard"})
             continue
         args = ["gh", "workflow", "run", "editar-aprovado.yml",
-                "--repo", os.environ.get("GITHUB_REPOSITORY", "HyanVincent/corteszinsbr-cloud"),
+                "--repo", os.environ.get("GITHUB_REPOSITORY", "HyanVincent/corteszinsbr-editor-public"),
                 "--ref", "main", "-f", f"video_url={clip['url']}"]
         proc = runner(args, capture_output=True, text=True, timeout=45)
         if proc.returncode:
