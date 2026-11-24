@@ -1,15 +1,34 @@
 {
   "creators": [
-    {"name": "Allan Stag", "slug": "allanstag", "url": "https://kick.com/allanstag"},
-    {"name": "Gabepeixe", "slug": "gabepeixe", "url": "https://kick.com/gabepeixe"},
-    {"name": "Davy Jones", "slug": "davyjones", "url": "https://kick.com/davyjones"},
-    {"name": "Brabox", "slug": "brabox", "url": "https://kick.com/brabox"},
-    {"name": "Coringa", "slug": "coringa", "url": "https://kick.com/coringa"}
+    {
+      "name": "Allan Stag",
+      "slug": "allanstag",
+      "url": "https://kick.com/allanstag"
+    },
+    {
+      "name": "Gabepeixe",
+      "slug": "gabepeixe",
+      "url": "https://kick.com/gabepeixe"
+    },
+    {
+      "name": "Davy Jones",
+      "slug": "davyjones",
+      "url": "https://kick.com/davyjones"
+    },
+    {
+      "name": "Brabox",
+      "slug": "brabox",
+      "url": "https://kick.com/brabox"
+    },
+    {
+      "name": "Coringa",
+      "slug": "coringa",
+      "url": "https://kick.com/coringa"
+    }
   ],
   "target_per_run": 3,
   "max_per_run": 5,
   "target_daily_opportunities": 9,
   "target_daily_approved": "3-5",
-  "approval_required": true,
-  "drive_review_folder_id": "1OaUWmjKU-CHEA3QU5MdbFvOKxC6Pg8o5"
+  "approval_required": true
 }

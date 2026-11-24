@@ -1,0 +1,62 @@
+name: Corteszinsbr - descobrir e editar (publico)
+on:
+  schedule:
+    - cron: '13 */4 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/descoberta-publica.yml'
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: corteszinsbr-public-discovery
+  cancel-in-progress: false
+
+jobs:
+  discovery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Kick extractor and test tools
+        run: python -m pip install -q 'yt-dlp>=2026.10.26' pytest
+      - name: Test discovery and deduplication
+        run: python -m pytest -q tests/test_hourly_clips.py tests/test_discover_clips.py
+      - name: Find clips from five authorized channels
+        run: |
+          python src/hourly_clips.py --state data/hourly_seen.json \
+            --output discovery --lookback-minutes 240 --recover-undispatched
+      - name: Save public metadata report
+        uses: actions/upload-artifact@v4
+        with:
+          name: corteszinsbr-public-discovery-${{ github.run_number }}
+          path: |
+            discovery/hourly_candidates.json
+            discovery/hourly_candidates.md
+          retention-days: 2
+      - name: Dispatch up to six edits per day (no publishing)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python src/hourly_clips.py --dispatch --state data/hourly_seen.json --daily-cap 6
+      - name: Persist public deduplication data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/hourly_seen.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: remember public Kick clips [skip ci]"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
