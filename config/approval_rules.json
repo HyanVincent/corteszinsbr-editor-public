@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "description": "Triagem técnica para clipes diretos Kick completos de até 180s, com legendas embutidas; não aprova direitos nem publicação",
+  "width": 1080,
+  "height": 1920,
+  "min_seconds": 15,
+  "max_seconds": 180,
+  "min_fps": 24,
+  "min_bytes": 300000,
+  "max_bytes": 250000000,
+  "min_mean_volume_db": -40,
+  "min_heuristic_score": 2,
+  "auto_publish_enabled": false
+}
