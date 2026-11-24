@@ -3,5 +3,7 @@
   "creator": "allanstag",
   "url": "https://kick.com/allanstag/clips/clip_01M8549EKAG33D916X1PRHFRFF",
   "purpose": "Reeditar corte com webcam validada; nao publicar automaticamente",
-  "approved_for_review": true
+  "approved_for_review": true,
+  "retry_reason": "Reexecutar apos incluir config/approval_rules.json ausente",
+  "retry_number": 1
 }
