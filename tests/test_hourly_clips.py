@@ -81,7 +81,7 @@ def test_dispatch_daily_limit_and_no_publication(tmp_path, monkeypatch):
     assert len(out["skipped"])==1
     assert out["auto_published"] is False
     assert len(calls)==1
-    assert "editar-cortes.yml" in calls[0]
+    assert "editar-aprovado.yml" in calls[0]
     assert "subtitle_mode=auto" in calls[0]
     assert "window_seconds=180" in calls[0]
     assert h.dispatch(state_path,daily_cap=1,now_ts=now,runner=fake_run)["queued_count"] == 0
