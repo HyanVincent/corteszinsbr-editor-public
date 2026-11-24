@@ -82,8 +82,8 @@ def test_dispatch_daily_limit_and_no_publication(tmp_path, monkeypatch):
     assert out["auto_published"] is False
     assert len(calls)==1
     assert "editar-aprovado.yml" in calls[0]
-    assert "subtitle_mode=auto" in calls[0]
-    assert "window_seconds=180" in calls[0]
+    assert any(arg.startswith("video_url=https://kick.com/allanstag/clips/") for arg in calls[0])
+    assert "subtitle_mode=auto" not in calls[0]  # The public editor has safe defaults
     assert h.dispatch(state_path,daily_cap=1,now_ts=now,runner=fake_run)["queued_count"] == 0
     assert len(calls)==1
 
