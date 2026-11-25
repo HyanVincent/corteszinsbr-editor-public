@@ -18,7 +18,12 @@
     "clip_01M87MDWQVA50D69Q8ZC9A1SRF",
     "clip_01M87E0N5NSDP1RSKP49MZR5RV",
     "clip_01M87SS8VQ1RRVSMME4Z7CQ19E",
-    "clip_01M87G4E7V56YNRK0VR5K0M8BS"
+    "clip_01M87G4E7V56YNRK0VR5K0M8BS",
+    "clip_01M88NFENQK925RFAX2N15EYFF",
+    "clip_01M88STJ172RD652HV5WTK7M8F",
+    "clip_01M88KHGP3HYKG9FQS71PAT7H0",
+    "clip_01M88GHPHXA4CMMC7G1K1R0RC7",
+    "clip_01M88QPCPHBTS8221QCD9C9MM0"
   ],
   "dispatched_ids": [
     "clip_01M8549EKAG33D916X1PRHFRFF",
@@ -39,68 +44,74 @@
     "clip_01M87MDWQVA50D69Q8ZC9A1SRF",
     "clip_01M87E0N5NSDP1RSKP49MZR5RV",
     "clip_01M87SS8VQ1RRVSMME4Z7CQ19E",
-    "clip_01M87G4E7V56YNRK0VR5K0M8BS"
+    "clip_01M87G4E7V56YNRK0VR5K0M8BS",
+    "clip_01M88NFENQK925RFAX2N15EYFF",
+    "clip_01M88STJ172RD652HV5WTK7M8F",
+    "clip_01M88KHGP3HYKG9FQS71PAT7H0",
+    "clip_01M88GHPHXA4CMMC7G1K1R0RC7",
+    "clip_01M88QPCPHBTS8221QCD9C9MM0"
   ],
   "daily_dispatch": {
     "2026-11-23": 10,
-    "2026-11-24": 9
+    "2026-11-24": 9,
+    "2026-11-25": 5
   },
   "last_batch": [
     {
-      "id": "clip_01M87GE4NR9YFGXVKJN8N7069B",
+      "id": "clip_01M88NFENQK925RFAX2N15EYFF",
       "channel": "allanstag",
-      "url": "https://kick.com/allanstag/clips/clip_01M87GE4NR9YFGXVKJN8N7069B",
-      "views": 3,
-      "timestamp": 1795548479,
-      "duration_seconds": 105.0,
+      "url": "https://kick.com/allanstag/clips/clip_01M88NFENQK925RFAX2N15EYFF",
+      "views": 2,
+      "timestamp": 1795587300,
+      "duration_seconds": 157.0,
       "rule": "highest_views_created_last_hour",
       "needs_content_review": true,
       "auto_published": false
     },
     {
-      "id": "clip_01M87MDWQVA50D69Q8ZC9A1SRF",
+      "id": "clip_01M88STJ172RD652HV5WTK7M8F",
       "channel": "gabepeixe",
-      "url": "https://kick.com/gabepeixe/clips/clip_01M87MDWQVA50D69Q8ZC9A1SRF",
-      "views": 9,
-      "timestamp": 1795552650,
+      "url": "https://kick.com/gabepeixe/clips/clip_01M88STJ172RD652HV5WTK7M8F",
+      "views": 2,
+      "timestamp": 1795591866,
       "duration_seconds": 30.0,
       "rule": "highest_views_created_last_hour",
       "needs_content_review": true,
       "auto_published": false
     },
     {
-      "id": "clip_01M87E0N5NSDP1RSKP49MZR5RV",
+      "id": "clip_01M88KHGP3HYKG9FQS71PAT7H0",
       "channel": "davyjones",
-      "url": "https://kick.com/davyjones/clips/clip_01M87E0N5NSDP1RSKP49MZR5RV",
-      "views": 7,
-      "timestamp": 1795545935,
-      "duration_seconds": 34.0,
-      "rule": "highest_views_created_last_hour",
-      "needs_content_review": true,
-      "auto_published": false
-    },
-    {
-      "id": "clip_01M87SS8VQ1RRVSMME4Z7CQ19E",
-      "channel": "brabox",
-      "url": "https://kick.com/brabox/clips/clip_01M87SS8VQ1RRVSMME4Z7CQ19E",
-      "views": 3,
-      "timestamp": 1795558277,
-      "duration_seconds": 96.0,
-      "rule": "highest_views_created_last_hour",
-      "needs_content_review": true,
-      "auto_published": false
-    },
-    {
-      "id": "clip_01M87G4E7V56YNRK0VR5K0M8BS",
-      "channel": "coringa",
-      "url": "https://kick.com/coringa/clips/clip_01M87G4E7V56YNRK0VR5K0M8BS",
+      "url": "https://kick.com/davyjones/clips/clip_01M88KHGP3HYKG9FQS71PAT7H0",
       "views": 5,
-      "timestamp": 1795548150,
-      "duration_seconds": 180.0,
+      "timestamp": 1795585311,
+      "duration_seconds": 120.0,
+      "rule": "highest_views_created_last_hour",
+      "needs_content_review": true,
+      "auto_published": false
+    },
+    {
+      "id": "clip_01M88GHPHXA4CMMC7G1K1R0RC7",
+      "channel": "brabox",
+      "url": "https://kick.com/brabox/clips/clip_01M88GHPHXA4CMMC7G1K1R0RC7",
+      "views": 3,
+      "timestamp": 1795582127,
+      "duration_seconds": 178.0,
+      "rule": "highest_views_created_last_hour",
+      "needs_content_review": true,
+      "auto_published": false
+    },
+    {
+      "id": "clip_01M88QPCPHBTS8221QCD9C9MM0",
+      "channel": "coringa",
+      "url": "https://kick.com/coringa/clips/clip_01M88QPCPHBTS8221QCD9C9MM0",
+      "views": 1,
+      "timestamp": 1795589638,
+      "duration_seconds": 54.0,
       "rule": "highest_views_created_last_hour",
       "needs_content_review": true,
       "auto_published": false
     }
   ],
-  "last_batch_at": 1795559279
+  "last_batch_at": 1795595802
 }
