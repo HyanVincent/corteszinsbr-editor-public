@@ -23,7 +23,12 @@
     "clip_01M88STJ172RD652HV5WTK7M8F",
     "clip_01M88KHGP3HYKG9FQS71PAT7H0",
     "clip_01M88GHPHXA4CMMC7G1K1R0RC7",
-    "clip_01M88QPCPHBTS8221QCD9C9MM0"
+    "clip_01M88QPCPHBTS8221QCD9C9MM0",
+    "clip_01M8A71DQEBERSANV7F8XEZ6K3",
+    "clip_01M89Z8PBTQBRFVPCFEMNJSTT4",
+    "clip_01M8A3X969YFXTVVAKRTMQ43YM",
+    "clip_01M8A1WCBZ9Z6WZSKHZAERPPR0",
+    "clip_01M8A14NKFC8PFA81H091WNPA4"
   ],
   "dispatched_ids": [
     "clip_01M8549EKAG33D916X1PRHFRFF",
@@ -49,69 +54,74 @@
     "clip_01M88STJ172RD652HV5WTK7M8F",
     "clip_01M88KHGP3HYKG9FQS71PAT7H0",
     "clip_01M88GHPHXA4CMMC7G1K1R0RC7",
-    "clip_01M88QPCPHBTS8221QCD9C9MM0"
+    "clip_01M88QPCPHBTS8221QCD9C9MM0",
+    "clip_01M8A71DQEBERSANV7F8XEZ6K3",
+    "clip_01M89Z8PBTQBRFVPCFEMNJSTT4",
+    "clip_01M8A3X969YFXTVVAKRTMQ43YM",
+    "clip_01M8A1WCBZ9Z6WZSKHZAERPPR0",
+    "clip_01M8A14NKFC8PFA81H091WNPA4"
   ],
   "daily_dispatch": {
     "2026-11-23": 10,
     "2026-11-24": 9,
-    "2026-11-25": 5
+    "2026-11-25": 10
   },
   "last_batch": [
     {
-      "id": "clip_01M88NFENQK925RFAX2N15EYFF",
+      "id": "clip_01M8A71DQEBERSANV7F8XEZ6K3",
       "channel": "allanstag",
-      "url": "https://kick.com/allanstag/clips/clip_01M88NFENQK925RFAX2N15EYFF",
+      "url": "https://kick.com/allanstag/clips/clip_01M8A71DQEBERSANV7F8XEZ6K3",
       "views": 2,
-      "timestamp": 1795587300,
-      "duration_seconds": 157.0,
-      "rule": "highest_views_created_last_hour",
-      "needs_content_review": true,
-      "auto_published": false
-    },
-    {
-      "id": "clip_01M88STJ172RD652HV5WTK7M8F",
-      "channel": "gabepeixe",
-      "url": "https://kick.com/gabepeixe/clips/clip_01M88STJ172RD652HV5WTK7M8F",
-      "views": 2,
-      "timestamp": 1795591866,
+      "timestamp": 1795639278,
       "duration_seconds": 30.0,
       "rule": "highest_views_created_last_hour",
       "needs_content_review": true,
       "auto_published": false
     },
     {
-      "id": "clip_01M88KHGP3HYKG9FQS71PAT7H0",
+      "id": "clip_01M89Z8PBTQBRFVPCFEMNJSTT4",
+      "channel": "gabepeixe",
+      "url": "https://kick.com/gabepeixe/clips/clip_01M89Z8PBTQBRFVPCFEMNJSTT4",
+      "views": 12,
+      "timestamp": 1795631120,
+      "duration_seconds": 61.0,
+      "rule": "highest_views_created_last_hour",
+      "needs_content_review": true,
+      "auto_published": false
+    },
+    {
+      "id": "clip_01M8A3X969YFXTVVAKRTMQ43YM",
       "channel": "davyjones",
-      "url": "https://kick.com/davyjones/clips/clip_01M88KHGP3HYKG9FQS71PAT7H0",
+      "url": "https://kick.com/davyjones/clips/clip_01M8A3X969YFXTVVAKRTMQ43YM",
       "views": 5,
-      "timestamp": 1795585311,
-      "duration_seconds": 120.0,
+      "timestamp": 1795635999,
+      "duration_seconds": 30.0,
       "rule": "highest_views_created_last_hour",
       "needs_content_review": true,
       "auto_published": false
     },
     {
-      "id": "clip_01M88GHPHXA4CMMC7G1K1R0RC7",
+      "id": "clip_01M8A1WCBZ9Z6WZSKHZAERPPR0",
       "channel": "brabox",
-      "url": "https://kick.com/brabox/clips/clip_01M88GHPHXA4CMMC7G1K1R0RC7",
-      "views": 3,
-      "timestamp": 1795582127,
-      "duration_seconds": 178.0,
+      "url": "https://kick.com/brabox/clips/clip_01M8A1WCBZ9Z6WZSKHZAERPPR0",
+      "views": 23,
+      "timestamp": 1795633906,
+      "duration_seconds": 30.0,
       "rule": "highest_views_created_last_hour",
       "needs_content_review": true,
       "auto_published": false
     },
     {
-      "id": "clip_01M88QPCPHBTS8221QCD9C9MM0",
+      "id": "clip_01M8A14NKFC8PFA81H091WNPA4",
       "channel": "coringa",
-      "url": "https://kick.com/coringa/clips/clip_01M88QPCPHBTS8221QCD9C9MM0",
-      "views": 1,
-      "timestamp": 1795589638,
-      "duration_seconds": 54.0,
+      "url": "https://kick.com/coringa/clips/clip_01M8A14NKFC8PFA81H091WNPA4",
+      "views": 6,
+      "timestamp": 1795633165,
+      "duration_seconds": 128.0,
       "rule": "highest_views_created_last_hour",
       "needs_content_review": true,
       "auto_published": false
     }
   ],
-  "last_batch_at": 1795595802
+  "last_batch_at": 1795642979
 }
