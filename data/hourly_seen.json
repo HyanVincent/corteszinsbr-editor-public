@@ -31,7 +31,12 @@
     "clip_01M8A14NKFC8PFA81H091WNPA4",
     "clip_01M8B4JK8J393K1QWYWNYXFK03",
     "clip_01M8B9QC7C5NW08KNFG9F885ZM",
-    "clip_01M8B2V9Q0MYPQ1MFGTZ5449PF"
+    "clip_01M8B2V9Q0MYPQ1MFGTZ5449PF",
+    "clip_01M8CNH9APNBK6FEPSMAJ3XH1Q",
+    "clip_01M8CQC5YC52AA36SJZR6AQYTG",
+    "clip_01M8CKHCWZ99V2HBAPES5A3KGJ",
+    "clip_01M8CVP9C1FHZYKQRSPFDHSBQJ",
+    "clip_01M8CK2H7NW21V9KPHENX31Q6C"
   ],
   "dispatched_ids": [
     "clip_01M8549EKAG33D916X1PRHFRFF",
@@ -65,48 +70,75 @@
     "clip_01M8A14NKFC8PFA81H091WNPA4",
     "clip_01M8B4JK8J393K1QWYWNYXFK03",
     "clip_01M8B9QC7C5NW08KNFG9F885ZM",
-    "clip_01M8B2V9Q0MYPQ1MFGTZ5449PF"
+    "clip_01M8B2V9Q0MYPQ1MFGTZ5449PF",
+    "clip_01M8CNH9APNBK6FEPSMAJ3XH1Q",
+    "clip_01M8CQC5YC52AA36SJZR6AQYTG",
+    "clip_01M8CKHCWZ99V2HBAPES5A3KGJ",
+    "clip_01M8CVP9C1FHZYKQRSPFDHSBQJ",
+    "clip_01M8CK2H7NW21V9KPHENX31Q6C"
   ],
   "daily_dispatch": {
     "2026-11-23": 10,
     "2026-11-24": 9,
     "2026-11-25": 10,
-    "2026-11-26": 3
+    "2026-11-26": 8
   },
   "last_batch": [
     {
-      "id": "clip_01M8B4JK8J393K1QWYWNYXFK03",
+      "id": "clip_01M8CNH9APNBK6FEPSMAJ3XH1Q",
       "channel": "allanstag",
-      "url": "https://kick.com/allanstag/clips/clip_01M8B4JK8J393K1QWYWNYXFK03",
-      "views": 8,
-      "timestamp": 1795670244,
-      "duration_seconds": 24.0,
+      "url": "https://kick.com/allanstag/clips/clip_01M8CNH9APNBK6FEPSMAJ3XH1Q",
+      "views": 2,
+      "timestamp": 1795721607,
+      "duration_seconds": 30.0,
       "rule": "highest_views_created_last_hour",
       "needs_content_review": true,
       "auto_published": false
     },
     {
-      "id": "clip_01M8B9QC7C5NW08KNFG9F885ZM",
+      "id": "clip_01M8CQC5YC52AA36SJZR6AQYTG",
+      "channel": "gabepeixe",
+      "url": "https://kick.com/gabepeixe/clips/clip_01M8CQC5YC52AA36SJZR6AQYTG",
+      "views": 15,
+      "timestamp": 1795723513,
+      "duration_seconds": 88.0,
+      "rule": "highest_views_created_last_hour",
+      "needs_content_review": true,
+      "auto_published": false
+    },
+    {
+      "id": "clip_01M8CKHCWZ99V2HBAPES5A3KGJ",
+      "channel": "davyjones",
+      "url": "https://kick.com/davyjones/clips/clip_01M8CKHCWZ99V2HBAPES5A3KGJ",
+      "views": 5,
+      "timestamp": 1795719508,
+      "duration_seconds": 180.0,
+      "rule": "highest_views_created_last_hour",
+      "needs_content_review": true,
+      "auto_published": false
+    },
+    {
+      "id": "clip_01M8CVP9C1FHZYKQRSPFDHSBQJ",
       "channel": "brabox",
-      "url": "https://kick.com/brabox/clips/clip_01M8B9QC7C5NW08KNFG9F885ZM",
+      "url": "https://kick.com/brabox/clips/clip_01M8CVP9C1FHZYKQRSPFDHSBQJ",
       "views": 2,
-      "timestamp": 1795675661,
-      "duration_seconds": 102.0,
+      "timestamp": 1795728061,
+      "duration_seconds": 68.0,
       "rule": "highest_views_created_last_hour",
       "needs_content_review": true,
       "auto_published": false
     },
     {
-      "id": "clip_01M8B2V9Q0MYPQ1MFGTZ5449PF",
+      "id": "clip_01M8CK2H7NW21V9KPHENX31Q6C",
       "channel": "coringa",
-      "url": "https://kick.com/coringa/clips/clip_01M8B2V9Q0MYPQ1MFGTZ5449PF",
-      "views": 2,
-      "timestamp": 1795668457,
-      "duration_seconds": 168.0,
+      "url": "https://kick.com/coringa/clips/clip_01M8CK2H7NW21V9KPHENX31Q6C",
+      "views": 10,
+      "timestamp": 1795719023,
+      "duration_seconds": 47.0,
       "rule": "highest_views_created_last_hour",
       "needs_content_review": true,
       "auto_published": false
     }
   ],
-  "last_batch_at": 1795681200
+  "last_batch_at": 1795728813
 }
